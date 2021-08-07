@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.HashSet;
 
 public class GymHasMembership {
 
@@ -14,6 +15,8 @@ public class GymHasMembership {
 
     @Column(name = "membership_id")
     private int membershipId;
+
+
 
 
 }
