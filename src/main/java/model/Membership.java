@@ -26,4 +26,5 @@ public class Membership {
             inverseJoinColumns = { @JoinColumn(name = "membership_id") }
     )
     Set<Membership> projects = new HashSet<>();
+
 }
