@@ -25,6 +25,47 @@ public class Membership {
             joinColumns = { @JoinColumn(name = "gym_id") },
             inverseJoinColumns = { @JoinColumn(name = "membership_id") }
     )
-    Set<Membership> projects = new HashSet<>();
+    Set<Membership> memberships = new HashSet<>();
 
+    public int getMembershipId() {
+        return membershipId;
+    }
+
+    public void setMembershipId(int membershipId) {
+        this.membershipId = membershipId;
+    }
+
+    public String getMembershipName() {
+        return membershipName;
+    }
+
+    public void setMembershipName(String membershipName) {
+        this.membershipName = membershipName;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public Set<Membership> getMemberships() {
+        return memberships;
+    }
+
+    public void setMemberships(Set<Membership> memberships) {
+        this.memberships = memberships;
+    }
+
+    @Override
+    public String toString() {
+        return "Membership{" +
+                "membershipId=" + membershipId +
+                ", membershipName='" + membershipName + '\'' +
+                ", price=" + price +
+                ", memberships=" + memberships +
+                '}';
+    }
 }
