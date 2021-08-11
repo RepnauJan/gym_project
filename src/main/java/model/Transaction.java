@@ -4,6 +4,7 @@ package model;
 import javax.persistence.*;
 import java.util.Date;
 
+
 @Entity
 public class Transaction {
 
